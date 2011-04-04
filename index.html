@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<header>
+<title>Nelson Enzo Designs</title>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script> -->
+<script src="./javascript/jquery-1.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script src="./javascript/drop_shaddow.js"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7/themes/smoothness/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="./stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="./stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#nav li').click(function(e){
+			$('#nav li').removeClass("selected");
+			$('.content-block:visible').hide();
+			$(this).addClass("selected");
+			$('#' + $(this).attr('dest')).show();
+		})
+		$('.portfolio-item').dropShadow({
+			left    : 6, 
+	    top     : 6, 
+	    blur    : 1, 
+	    opacity : .5, 
+	    color   : "black", 
+	    swap    : false 
+		});
+	}); //document ready
+</script>
+
+</header>
+<body>
+	<div id="container">
+		<div id="header">
+			<p class="name">Nelson<br/>Enzo</p>
+			<p class="design">Designs</p>
+			<div id="nav">
+				<ul>
+					<li class="selected" dest="portfolio">Portfolio</li>
+					<li dest="about">About</li>
+					<li dest="contact">Contact</li>
+				</ul>
+			</div><!-- #nav -->
+			<img src="./images/b2.png">
+		</div>
+		<div id="portfolio" class="content-block">
+			<div class="portfolio-item ui-corner-all">
+				<div class="brand-id ui-corner-left">
+					<a class="a-tab ui-corner-all" href=""><img class="sg" src="./images/stargreetz_logo.png"></a>
+				</div>
+			</div><!-- /.portfolio-item -->
+			<div class="portfolio-item ui-corner-all">
+				<div class="brand-id ui-corner-left">
+					<a class="a-tab ui-corner-all" href="http://www.stargreetz.com/abc7" target="_new"><img class="abc7" src="./images/kabc_logo.gif"></a>
+				</div>
+				<div class="description">
+					<h3>ABC7 Morning Wake-Up Calls</h3></br>
+					<h5>powered by StarGreetz</h5>
+					<p class="tech">Javascript, HTML, CSS, Ruby on Rails, SendGrid</p>
+					<p>Integrated StarGreetz personalization and telephony technology to deliver personalized morning wake up calls with the local weather.</p>
+				</div><!-- description -->
+			</div><!-- /.portfolio-item -->
+			<div class="portfolio-item ui-corner-all">
+				<div class="brand-id ui-corner-left">
+					<a class="a-tab ui-corner-all" href="http://abc.go.com/shows/the-middle/greetings-from-brick?cid=10_stargreetz_navlink">
+						<img class="themiddle" src="./images/the-middle.jpg">
+					</a>
+				</div>
+				<div class="description">
+					<h3>The Middle - Message From Brick</h3></br>
+					<h5>powered by StarGreetz</h5>
+					<p class="tech">Javascript, HTML, CSS, Ruby on Rails, SendGrid</p>
+					<p>Integrated StarGreetz personalization and telephony technology to deliver personalized morning wake up calls with the local weather.</p>
+				</div><!-- description -->
+			</div><!-- /.portfolio-item -->
+			<div class="portfolio-item ui-corner-all">
+				<div class="brand-id ui-corner-left">
+					<a class="a-tab ui-corner-all" href="http://www.cutiescitrus.com/fun_and_games/make_a_video" target="_new"><img class="cuties" src="./images/lilzipper.png"></a>
+				</div>
+				<div class="description">
+					<h3>Cuties Citrus</h3></br>
+					<h5>powered by StarGreetz</h5>
+					<p class="tech">Javascript, HTML, CSS, Ruby on Rails, SendGrid</p>
+					<p>Integrated StarGreetz personalization technology to deliver a Cuties Citrus MVP e-mail marketing campaign.</p>
+				</div><!-- description -->
+			</div><!-- /.portfolio-item -->
+			<div class="portfolio-item ui-corner-all">
+				<div class="brand-id ui-corner-left">
+					<a class="a-tab ui-corner-all" href=""><img class="na" src="./images/na.png"></a>
+				</div>
+			</div><!-- /.portfolio-item -->
+			<div class="portfolio-item ui-corner-all">
+				<div class="brand-id ui-corner-left">
+					<a class="a-tab ui-corner-all" href=""><img class="mike" src="./images/mlp.png"></a>
+				</div>
+			</div><!-- /.portfolio-item -->
+		</div><!-- /#portfolio -->
+		<div id="about" class="content-block">
+		</div>
+		<div id="contact" class="content-block">
+			<ul>
+				<li><span class="title">e-mail:</span>nelsonh@gmail.com</li>
+				<li><span class="title">phone:</span>818-220-1300</li>
+				<li><span class="title">twitter:</span>@nelsonenzo</li>
+			</ul>
+		</div>
+	</div><!-- /#container-->
+</body>
+</html>
